@@ -1,0 +1,119 @@
+/*Quitar el margin de la segunda seccion de series 12 de la pagina de inicio des total tools*/
+section.elementor-element-cad0708 div.elementor-column-gap-no div.elementor-element-c049101 div.elementor-widget-wrap div.series-12 {
+    margin-bottom: 0px;
+}
+section.elementor-section div.elementor-column-gap-no div.elementor-col-33 div.elementor-element-populated div.elementor-element-d3201cb {
+    margin-bottom: 0px;
+}
+
+
+
+/*Clases para el slider de los prodcutos de los mas vendido*/
+/*Toca mejorar la seleccion de clases porque esta afectando a otros elementos*/
+section.elementor-element-99178af div.elementor-column-gap-default div.elementor-element-eb291ce .elementor-element-populated section.elementor-element-dd3c88b div.elementor-column-gap-default div.elementor-element-de60368 div.elementor-element-5ec3859 div.eael-product-appender-5ec3859 ul.swiper-wrapper li.swiper-slide .eael-product-carousel div.product-image-wrap{
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+div.elementor-element-5ec3859 ul.swiper-wrapper li.swiper-slide div.eael-product-carousel div.product-image-wrap {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*Clases para separar las letras del footer en celular*/
+@media (max-width: 767px) {
+    div.elementor-8202 section.elementor-element-28b636a div.elementor-container div.elementor-element-6cd42e2 div.elementor-widget-wrap section.elementor-element-f9f1e2a div.elementor-container div.elementor-inner-column {
+        margin: 30px 0;
+    }
+}
+
+/*Clase el menu de nav en la pagina de total tools*/
+@media (max-width: 479px){
+    .elementor-nav-menu__align-left .elementor-nav-menu, .elementor-nav-menu__align-left .elementor-nav-menu--layout-vertical>ul>li>a {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .elementor-nav-menu__align-left .elementor-nav-menu, .elementor-nav-menu__align-left .elementor-nav-menu--layout-vertical>ul>li>a {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width : 1024px){
+    .elementor-nav-menu__align-left .elementor-nav-menu, .elementor-nav-menu__align-left .elementor-nav-menu--layout-vertical>ul>li>a {
+        width: 40%;
+    }
+}
+/*Fondo gris*/
+@media (max-width: 1024px){
+    .elementor-nav-menu--toggle .elementor-menu-toggle.elementor-active+.elementor-nav-menu__container {
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    .elementor-nav-menu__align-left .elementor-nav-menu, .elementor-nav-menu__align-left .elementor-nav-menu--layout-vertical>ul>li>a{
+            background-color: #117076;
+    }
+}
+
+
+@media (min-width: 883px){
+    /*Acomodar botones de los mas vendido de la pagina de inicio de total tools*/
+    /*Boton de comprar ahora*/
+    div.eael-product-popup-ready div.eael-woo-slider-popup div.elementor-element-5ec3859 #product- div.eael-product-details-wrap form.cart a.buy-now {
+        margin-top: 50px;
+    }
+    /*Boton de agregar al carrito*/
+    div.eael-product-popup-ready div.eael-woo-slider-popup div.elementor-element-5ec3859 #product- div.eael-product-details-wrap form.cart button.single_add_to_cart_button {
+        margin-top: 50px;
+    }
+}
+
+
+/*Altura para la vista rapida de los productos de los mas vendidos en el slider de total al final de la pagina de inicio*/
+@media (min-width: 900px) {
+    div.eael-woocommerce-popup-view div.eael-popup-details-render div.eael-product-popup-details {
+        min-height: 500px;
+    }
+}
+
+/*Clases mas especificas para el menu de nav en la pagina de total tools*/
+#outer-wrap #wrap header.effect-seven .elementor-7781 section.elementor.element-551c31a div.elementor-column-gap-default div.elementor-element-67ee3b0 div.elementor-widget-wrap div.elementor-element-populated div.elementor-element-4d16877 div.elementor-widget-container nav.elementor-nav-menu-dropdown ul.elementor-nav-menu li.menu-item a.elementor-item {
+
+}
+
+
+@media (max-width: 1024px){
+    section.elementor-element-551c31a div.elementor-element-67ee3b0 div.elementor-element-4d16877 div.elementor-widget-container nav.elementor-nav-menu--dropdown ul#menu-2-4d16877 li.menu-item-type-post_type li.elementor-item-active {
+        background-color: #117076;
+    }
+    section.elementor-element-551c31a div.elementor-element-67ee3b0 div.elementor-element-4d16877 div.elementor-widget-container nav.elementor-nav-menu--dropdown ul#menu-2-4d16877 li.menu-item-type-post_type li.elementor-item-active:focus {
+        background-color: #f2f2f2;
+        color: #000;
+    }
+    section.elementor-element-551c31a div.elementor-element-67ee3b0 div.elementor-element-4d16877 div.elementor-widget-container nav.elementor-nav-menu--dropdown ul#menu-2-4d16877 li.menu-item-type-post_type li.elementor-item-active:hover {
+        background-color: #f2f2f2;
+        color: #117076;
+        border: 1px solid #117076;
+    }
+}
+
+
+/*Clases para quitar las tarjetas de productos de total tools*/
+section.elementor-element-4e0418a div.elementor-column-gap-default div.elementor-element-d0eec17 div.elementor-element-populated div.elementor-element-f47468a div.elementor-widget-container ul.oceanwp-row li.product_tag-total-tools {
+    display: none;
+}
+
+/*botones para producto solo en la pagina principal*/
+@media screen and (min-width: 788px) and (max-width: 1027px) {
+    
+}
+
+
+/*Price for the single product of the total tools change color*/
+section.elementor-element-47d375f .elementor-column-gap-narrow .elementor-element-129cef2 div.elementor-element-populated div.elementor-element-f4431f2 div.elementor-widget-container p.price ins span.woocommerce-Price-amount bdi {
+    color: #117076;
+}

@@ -1,0 +1,632 @@
+/*
+Theme Name: OceanWP Child Theme
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme. Sample child theme.
+Author: OceanWP
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 2.4.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+/*Agregar css organizado*/
+
+/* Path: codigo-pagina-principal\organizar-todo-style.css */
+/*
+*
+*Estilos generales
+*
+*/
+/* Caja de procentaje de descuento para todas las tarjetas de productos */
+.elementor-17 .elementor-element.elementor-element-9ee04a0.elementor-wc-products ul.products li.product span.onsale,
+.elementor-17 .elementor-element.elementor-element-e6c48ba.elementor-wc-products ul.products li.product span.onsale,
+.elementor-17 .elementor-element.elementor-element-7f12352.elementor-wc-products ul.products li.product span.onsale,
+.elementor-17 .elementor-element.elementor-element-ba6d91e.elementor-wc-products ul.products li.product span.onsale,
+.elementor-17 .elementor-element.elementor-element-130e72a.elementor-wc-products ul.products li.product span.onsale,
+.elementor-1261 .elementor-element.elementor-element-f47468a.elementor-wc-products ul.products li.product span.onsale,
+.elementor-17 .elementor-element.elementor-element-793b0f9.elementor-wc-products ul.products li.product span.onsale,
+.elementor-5834 .elementor-element.elementor-element-68c9c4a.elementor-wc-products ul.products li.product span.onsale,
+.elementor-3835 .elementor-element.elementor-element-b15c83a.elementor-wc-products ul.products li.product span.onsale {
+    top: 0 !important;
+    left: 0 !important;
+    height: 20px;
+    font-size: 14px;
+    width: 60px;
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: #FF0000;
+	border-radius: 0%;
+	line-height: 20px;
+}
+.owp-qv-content-inner .woocommerce .circle-sale span.onsale{
+	top: 10px;
+    left: 0 !important;
+    height: 20px;
+    font-size: 14px;
+    width: 60px;
+    padding: 0px 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: #FF0000;
+	border-radius: 0%;
+}
+/*Animacion hover de las tarjetas de productos*/
+.elementor-17 .elementor-element.elementor-element-9ee04a0.elementor-wc-products ul.products li.product:hover,
+.elementor-17 .elementor-element.elementor-element-e316808.elementor-wc-products ul.products li.product:hover,
+.elementor-17 .elementor-element.elementor-element-e6c48ba.elementor-wc-products ul.products li.product:hover,
+.elementor-17 .elementor-element.elementor-element-130e72a.elementor-wc-products ul.products li.product:hover {
+    transition: background .4s ease,border-color .4s ease,box-shadow .4s ease,outline .4s ease;
+}
+/*Vista rapida del producto*/
+/*Caja de porcentaje de descuento del producto*/
+.owp-qv-content-inner .woocommerce .circle-sale span.onsale {
+	line-height: 20px;
+}
+.woocommerce div.product form.cart .e-atc-qty-button-holder .quantity {
+	margin-top: 0px;
+}
+/*Padding general para los botones de comprar ahora y añadir al carrito*/
+.eael-popup-details-render.elementor-17 .elementor-element.elementor-element-a5dc8cb .button, .eael-popup-details-render.elementor-17 .elementor-element.elementor-element-a5dc8cb button.button.alt {
+	padding: 12px 20px;
+}
+/*Boton de comprar ahora*/
+#owp-qv-wrap .owp-qv-container .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content .cart a.buy-now.button {
+	padding: 12px 20px;
+}
+/*Margin para boton agregar al carrito acomodar con boton comprar ahora*/
+.woocommerce div.product div.summary button.single_add_to_cart_button {
+	margin: 0;
+}
+/*Alinear texto de ver carrito cuando se oprime el boton de añadir al carrito*/
+.woocommerce div.product .summary .added_to_cart {
+	text-align: center;
+	margin: 10px;
+}
+/*Agregar un margin auto para que el boton de añadir al carrito se acomode igual de alto a la caja de cantidad de productos y al boton comprar ahora*/
+.woocommerce div.product.elementor .elementor-widget-woocommerce-product-add-to-cart.elementor-add-to-cart--align-center form.cart button{
+	margin: 10px;
+}
+
+/*Margin para el boton de anañdir al carrito sea igual de alto a la caja de cantidad de productos y al boton de comprar ahora en producto solo (Hacer pruebas para eliminar)*/
+.woocommerce div.product.elementor .elementor-widget-woocommerce-product-add-to-cart.elementor-add-to-cart--align-left form.cart button {
+	margin: auto 0;
+}
+/*Margenes para botones de comprar ahora y agregar en la tarjeta de productos
+Magin general para los botones*/
+.woocommerce ul.products li.product .button{
+    margin: 0;
+}
+/*Estilos para reducir el alto de la tarjeta de productos (toca revisar las especificidad)*/
+.elementor-column .woocommerce .products .product .title a {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+	line-height: normal;
+    overflow: hidden;
+}
+.elementor-widget-container .woocommerce .products .product .woo-entry-inner .title{
+	margin: 0;
+}
+.woocommerce ul.products li.product li.title h2{
+	margin-bottom: 5px;
+}
+/*Tener solo una linea en la categoria de las tarjetas de productos en la partes inferior*/
+.woocommerce ul.products li.product .woo-entry-inner li:last-child {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+	line-height: normal;
+    overflow: hidden;
+}
+/*Animacion para de box shadow para las tarjetas de productos*/
+.elementor-4364 .elementor-element.elementor-element-184f645.elementor-wc-products ul.products li.product:hover,
+.elementor-4364 .elementor-element.elementor-element-b6743d0.elementor-wc-products ul.products li.product:hover,
+.elementor-4364 .elementor-element.elementor-element-ad8c1b4.elementor-wc-products ul.products li.product:hover, .elementor-4364 .elementor-element.elementor-element-7328340.elementor-wc-products ul.products li.product:hover {
+	transition: background .4s ease,border-color .4s ease,box-shadow .4s ease,outline .4s ease;
+}
+/*Margin para la tarjeta de productos*/
+.woocommerce ul.products li.product li.title h2,
+.elementor-widget-container .woocommerce ul.products li.product .woo-entry-inner li {
+	margin-bottom: 0px;
+}
+/*Ocultar texto de la de la descripcion del producto de vista rapida*/
+.woocommerce div.product .entry-summary div.woocommerce-product-details__short-description,
+.woocommerce div.product .eael-product-details-wrap div.woocommerce-product-details__short-description {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	line-height: normal;
+	overflow: hidden;
+}
+/*****************************************************************************************/
+/*Header*/
+/*Evitar que se desvorden los iconos del header*/
+.center-menu #site-navigation-wrap {
+	width: max-content;
+}
+/*Alinear lupa*/
+.dgwt-wcas-ico-magnifier-handler{
+	margin-top: 30px;
+}
+/************************Categorias menu desplegable***************************/
+/*Estilos para el menu desplegable de categorias*/
+.contenedor-menu .menu-desplegable {
+    display: none !important;
+    position: absolute;
+}
+.contenedor-menu:hover .menu-desplegable {
+    display: block !important;
+	position: relative;
+}
+.navigation .megamenu li a.menu-link {
+	padding: 15px 20px;
+	height: 50px;
+}
+.navigation .megamenu li ul.sub-menu {
+	overflow: auto;
+	max-height: 20vh;
+}
+.sf-menu li:hover>ul, .sf-menu li.sfHover>ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu-desplegable {
+	width: 100%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+}
+/**************************************Footer***************************************/
+
+/*
+*
+*Pagina de inicio
+*
+*/
+/*Slider principal de inicio*/
+.elementor-17 .elementor-element.elementor-element-b95cfd4 .swiper-slide-contents {
+	border: solid 5px;
+	padding: 20px;
+    background: #4c464699;
+}
+.elementor-17 .elementor-element.elementor-element-b95cfd4 .swiper-slide-contents:hover {
+    background: #c30d0de0;
+}
+/*Seccion de lo mas buscado*/
+.elementor-17 .elementor-element.elementor-element-f296ffe > .elementor-widget-container,
+.elementor-17 .elementor-element.elementor-element-dc2dcbc > .elementor-widget-container,
+.elementor-17 .elementor-element.elementor-element-78da32a > .elementor-widget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+/*********************************************************Seccion de categorias*********************************************/
+
+/*****************************************************Seccion de productos en ofertas***************************************/
+
+/**********************************************************Marcas destacadas************************************************/
+
+/******************************************************Slider de lo mas vendido*********************************************/
+/*Letra para la caja de porcentaje de descuento*/
+.eael-woo-product-carousel-container.preset-3 .eael-product-carousel .eael-onsale {
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+/*Estilos para el slider de las tarjetas de productos mas vendidos*/
+.eael-woo-product-carousel-container .eael-product-title * {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: normal;
+    overflow: hidden;
+}
+/*Estilos para el slider de los productos mas vendidos*/
+.elementor-17 .elementor-element.elementor-element-a5dc8cb .eael-product-carousel {
+	border-radius: 0;
+	background-color: #fff;
+}
+/*Cambiar los colores de las tarjetas de productos para los sliders de productos mas vendidos /*Toca revisar este codigo para que funcione correctamente los colores*/
+.eael-woo-product-carousel-container .icons-wrap.block-style li .open-popup-link,
+.eael-woo-product-carousel-container .icons-wrap.block-style .add-to-cart a.button.add_to_cart_button,
+.eael-woo-product-carousel-container.swiper-container-wrap-dots-outside .swiper-pagination.dots-preset-1 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #FF0000;
+}
+.elementor-17 .elementor-element.elementor-element-a5dc8cb .swiper-container-wrap .swiper-button-next:hover,
+.elementor-17 .elementor-element.elementor-element-a5dc8cb .swiper-container-wrap .swiper-button-prev:hover {
+    background-color: #FF0000;
+}
+.eael-woo-product-carousel-container.preset-3 .eael-product-carousel:hover .icons-wrap.block-style {
+	background: #FF6666;
+}
+.eael-woo-product-carousel-container .icons-wrap.block-style li:last-child {
+	display:none;
+}
+/*Texto en la caja de cantidad de productos a comprar*/
+.eael-popup-details-render.elementor-17 .elementor-element.elementor-element-a5dc8cb div.product form.cart div.quantity .qty, .elementor-17 .elementor-element.elementor-element-a5dc8cb .eael-product-popup.woocommerce div.product form.cart div.quantity > a, .elementor-17 .elementor-element.elementor-element-a5dc8cb .eael-product-popup.woocommerce div.product form.cart div.quantity > .button {
+    font-size: 1.4rem !important;
+}
+/*Tamaño de letra de las tarjetas de productos*/
+.eael-woo-product-carousel-container .eael-product-title .woocommerce-LoopProduct-link, .eael-woo-product-carousel-container .eael-product-title .woocommerce-LoopProduct-link h2 {
+	font-size: 1.4rem;
+}
+/*Alto de la caja de porcentaje de descuento del producto y color*/
+.woocommerce .circle-sale span.onsale {
+	line-height: 20px;
+}
+.elementor-17 .elementor-element.elementor-element-a5dc8cb .woocommerce ul.products li.product .onsale, .elementor-17 .elementor-element.elementor-element-a5dc8cb .woocommerce ul.products li.product .eael-onsale {
+	background: #FF0000;
+}
+.eael-product-popup .post-83 .eael-onsale {
+	background-color: #FF0000;
+}
+.elementor-17 .elementor-element.elementor-element-a5dc8cb .eael-product-carousel:hover {
+	box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 30%);
+	transition: background .4s ease,border-color .4s ease,box-shadow .4s ease,outline .4s ease;
+}
+/********************************************************Ultimas novedades********************************************/
+
+/*Ofertas imperdibles*/
+.elementor-17 .elementor-element.elementor-element-23af464:not(.elementor-motion-effects-element-type-background){
+    margin-bottom: 5px;
+}
+.elementor-17 .elementor-element.elementor-element-23af464:not(.elementor-motion-effects-element-type-background),
+.elementor-17 .elementor-element.elementor-element-21a6740:not(.elementor-motion-effects-element-type-background) {
+    display: flex;
+}
+.elementor-17 .elementor-element.elementor-element-cfa4802:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap,
+.elementor-17 .elementor-element.elementor-element-c5c3676:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap {
+    width: 310px;
+}
+/*Logo de la marca en oferta*/
+.logo-ofertas-imperdibles /*Clase creada en elementor*/ {
+    position: absolute !important;
+	-webkit-transform: rotate(270deg);
+	margin-top: 120px;
+	margin-right: 240px;
+}
+/*Texto de categoria del producto*/
+.elementor-17 .elementor-element.elementor-element-a9b1e78 .elementor-heading-title {
+    float: right;
+    transform: rotate(90deg);
+    margin-top: -150px;
+    margin-right: -105px;
+}
+.elementor-17 .elementor-element.elementor-element-9488f8b .elementor-heading-title {
+    float: right;
+    transform: rotate(90deg);
+    margin-top: -90px;
+    margin-right: -40px;
+}
+/*****************************************Productos destacados**************************************/
+
+/*****************************************************************************************/
+/*
+*
+Pagina de tienda
+*
+*/
+/*Quitar los botones de la parte inferior en la tienda*/
+.elementor-products-grid:not(.elementor-show-pagination-border-yes) nav.woocommerce-pagination ul {
+	display: none;
+}
+/*Sidebar de la tienda clase herramientas*/
+.elementor-1261 .elementor-element.elementor-element-f485bb6 .jet-checkboxes-list__row {
+	border-top: 1px solid #eee;
+}
+/*Estilos para los filtros de la tienda*/
+.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-wrapper {
+	border-top: 3px solid #bd1e1e;
+	padding-top: 20px;
+}
+.elementor-2782 .elementor-element.elementor-element-1869581 .jet-checkboxes-list__row {
+	border-top: 1px solid #eee;
+}
+.elementor-1261 .elementor-element.elementor-element-cbca3a1 .jet-checkboxes-list__row {
+	border-top: 1px solid #eee;
+}
+.elementor-1261 .elementor-element.elementor-element-e368aa6 .jet-search-filter {
+	border-bottom: 3px solid #bd1e1e;
+}
+/*Espacidado de breadcrumbs para que no baje a la mitad las tarjetas de productos*/
+.site-main .elementor-1261 .elementor-element.elementor-element-d0eec17.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated {
+	align-content: start;
+}
+/*****************************************************************************************/
+/*
+*
+Product Single
+*
+*/
+/*Magin para caja de cantidad de productos*/
+@media (min-width: 627px) {
+	.woocommerce div.product form.cart div.quantity {
+		margin-top: 10px;
+	}
+}
+.woocommerce ul.products li.product li.title h2, .woocommerce ul.products li.product .product-inner li.title a {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: normal;
+    overflow: hidden;
+}
+.elementor-widget-testimonial-carousel .elementor-swiper .swiper-slide {
+	padding: 0px;
+}
+
+.woocommerce .circle-sale .elementor-widget-container span.onsale {
+	left: 0;
+	border-radius: 0px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #FF0000;
+}
+/******************************************************************************************/
+/*
+*
+PAGINA DE CUENTA
+*
+*/
+.elementor-255 .elementor-element.elementor-element-75df096 > .elementor-container {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+.single-page-article .elementor-255 .elementor-element.elementor-element-8a083dd {
+    width: auto;
+    height: fit-content;
+}
+.elementor-255 .elementor-element.elementor-element-8a083dd {
+    height: 47vh;
+}
+.elementor-widget-container .e-my-account-tab .woocommerce .u-columns .u-column2 .woocommerce-form {
+    height: fit-content !important;
+}
+.elementor-column .elementor-element-populated .e-my-account-tab .woocommerce .u-columns .woocommerce-form-login {
+    height: fit-content !important;
+}
+
+/*Media Querys*/
+/*Celulares*/
+@media (max-width: 367px) {
+    /*Boton de comprar ahora y agregar al carrito*/
+    .woocommerce ul.products li.product .button {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 368px) and (max-width: 423px) {
+    /*Boton de comprar ahora y agregar al carrito*/
+    .woocommerce ul.products li.product .button {
+        padding: 5px 12px;
+    }
+}
+@media (max-width: 395px) {
+    /*Tamaño de letra para el slider principal del inicio*/
+    .elementor-17 .elementor-element.elementor-element-b95cfd4 .swiper-slide-inner .elementor-slide-heading:not(:last-child) {
+		font-size: 1.6rem;
+	}
+	.woocommerce ul.products li.product .product-inner .button {
+		padding: 5px 5px;
+	}
+}
+@media (max-width: 425px) {
+	.elementor-17 .elementor-element.elementor-element-a9b1e78 .elementor-heading-title {
+		margin-right: -95px;
+	}
+	.elementor-17 .elementor-element.elementor-element-9488f8b .elementor-heading-title {
+		margin-right: -30px;
+	}
+	.contenedor-columna-oferta,
+    .contenedor-columna-destacados,
+	.contenedor-columna-acerca-nosotros {
+        padding: 10px;
+    }
+    /*Tamaño letra para el titulo de la tarjeta de producto*/
+    .elementor-column .woocommerce .products .product .title a {
+			font-size: 0.9em;
+			font-weight: 700;
+    }
+}
+@media (max-width: 460px) {
+    /*Slider principal de inicio*/
+    .elementor-17 .elementor-element.elementor-element-b95cfd4 .swiper-slide-contents {
+        padding: 20px 5px;
+    }
+}
+@media (max-width: 480px) {
+	.e-my-account-tab .woocommerce .owp-account-links li .owp-account-link,
+	.account-original-style .woocommerce #customer_login>div {
+    	font-size: 3rem;
+	}
+}
+@media (max-width: 506px) {
+	.woocommerce div.product .entry-summary .summary-content  form.cart {
+		display: flex;
+		flex-direction: column;
+	}
+	#owp-qv-wrap .owp-qv-container .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content .cart a.buy-now.button {
+		margin: 5px 0px;
+	}
+}
+/*Media query para celular en detalles de productos (SE TIENE QUE REVISAR LA FUNCIONALIDAD DE ESTE CODIGO)*/
+@media (max-width: 539px){
+    .woocommerce div.product.elementor .elementor-widget-woocommerce-product-add-to-cart.elementor-add-to-cart--align-left[class*="--layout-auto"] .e-atc-qty-button-holder {
+		flex-direction: column;
+	}
+	.woocommerce div.product.elementor .elementor-widget-woocommerce-product-add-to-cart.elementor-add-to-cart--layout-auto .e-atc-qty-button-holder button {
+		margin: 0 10px;
+	}*/
+    /*Margin para el boton de agregar al carrito en producto solo para que sea igual de ancho al boton de comprar ahora*/
+    .woocommerce div.product.elementor .elementor-widget-woocommerce-product-add-to-cart.elementor-add-to-cart--align-left form.cart button {
+		margin: 0 10px;
+	}
+    .e-atc-qty-button-holder a.buy-now {
+		margin: 5px 10px;
+		padding: 12px 20px
+	}
+}
+/*Tamaño del boton de comprar ahora y añadir al carrito en la pagina de producto solo*/
+@media (min-width: 540px) {
+    .e-atc-qty-button-holder a.buy-now, .e-atc-qty-button-holder .single_add_to_cart_button {
+        width: 185px;
+		padding: 12px 20px;
+	}
+}
+@media screen and (min-width: 507px) and (max-width: 601px) {
+	.woocommerce div.product .summary .summary-content .added_to_cart  {
+		float: left;
+		margin-left: 240px;
+		margin-top: 0px;
+	}
+}
+@media screen and (min-width: 507px) and (max-width: 626px) {
+	#owp-qv-wrap .owp-qv-container .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content .cart a.buy-now.button, .woocommerce div.product div.summary button.single_add_to_cart_button {
+		width: 185px;
+	}
+	#owp-qv-wrap .owp-qv-container .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content .cart a.buy-now.button {
+		margin-top: 50px;
+		margin-left: -120px;
+	}
+}
+@media (max-width: 600px) {
+    /*Ancho para el contenedor interior de la caja de cuenta*/
+    .account-original-style .woocommerce #customer_login .col-2,
+	.account-original-style .e-my-account-tab .woocommerce #customer_login>div {
+        width: 90vw;
+    }
+}
+@media screen and (min-width: 627px) and (max-width: 721px) {
+	.woocommerce div.product .summary .summary-content .added_to_cart {
+		float: left;
+		margin-left: 355px;
+		margin-top: 0px;
+	}
+}
+@media (max-width: 767px) {
+    /*No mostrar imagen en celular en la seccion de los productos novedosos*/
+    .elementor-17 .elementor-element.elementor-element-564b12c img {
+		display: none;
+	}
+    /*Responsive para la pagina de cuenta*/
+    .woocommerce .owp-account-links {
+        display: flex;
+        flex-direction: column;
+    }
+    .e-my-account-tab .woocommerce .owp-account-links li.or {
+        display: none;
+    }
+	.woocommerce .owp-account-links {
+		width: fit-content;
+		margin: auto;
+	}
+}
+/*Tablets*/
+/*Media query para diseño responsive en table de los botones en la vista previa de los productos*/
+@media screen and (min-width: 768px) and (max-width: 787px) {
+	form.cart div.e-atc-qty-button-holder {
+		display: flex;
+		flex-direction: column;
+	}
+	.e-atc-qty-button-holder a.buy-now {
+		margin: 5px 0px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    /*Letra sidebar tienda*/
+    .elementor-1261 .elementor-element.elementor-element-385fe9f .elementor-icon-box-title,
+	.elementor-1261 .elementor-element.elementor-element-8960344 .elementor-icon-box-title,
+	.elementor-1261 .elementor-element.elementor-element-c0adec3 .elementor-icon-box-title {
+        font-size: 1.6rem;
+    }
+	.elementor-1261 .elementor-element.elementor-element-f485bb6 .jet-checkboxes-list-wrapper,
+	.elementor-1261 .elementor-element.elementor-element-cbca3a1 .jet-checkboxes-list-wrapper {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 850px) {
+	.woocommerce div.product div.summary button.single_add_to_cart_button{
+		margin: 10px 0;
+	}
+	.woocommerce div.product .summary .added_to_cart{
+		margin: 15px 0;
+	}
+}
+@media screen and (min-width: 851px) and  (max-width: 952px) {
+	.owp-qv-content-inner .woocommerce div.product {
+		width: 90vw;
+	}
+    /*Contenedor de los botones en la vista*/
+    .is-visible .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content form.cart {
+		display: flex;
+		flex-direction: column;
+		margin-right: 50px;
+	}
+    /*Boton de comprar ahroa en la vista rapida*/
+    .is-visible .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content form.cart div.quantity, .is-visible .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content form.cart a.buy-now {
+		margin-bottom: 5px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /*Reduccir el padding para los botones de la seccion de lo mas buscado*/
+    .elementor-17 .elementor-element.elementor-element-f296ffe .elementor-button,
+    .elementor-17 .elementor-element.elementor-element-dc2dcbc .elementor-button,
+    .elementor-17 .elementor-element.elementor-element-78da32a .elementor-button {
+        padding: 12px 5px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1095px) {
+    /*Padding para el boton de comprar ahora y agregar al carrito*/
+    .elementor-widget-container .woocommerce .products .product .button {
+        padding: 5px 12px;
+    }
+}
+@media screen and (min-width: 627px) and (max-width: 850px) {
+	#owp-qv-wrap .owp-qv-container .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content .cart a.buy-now.button, .woocommerce div.product div.summary button.single_add_to_cart_button {
+		width: 185px;
+	}
+}
+@media (min-width: 953px){
+    /*Boton de comprar en la vista rapida*/
+    #owp-qv-wrap .owp-qv-container .owp-qv-content-wrap .owp-qv-content-inner .woocommerce .product .entry-summary .summary-content .cart a.buy-now.button {
+		margin-top: 55px;
+		margin-left: -120px;
+		width: 185px;
+	}
+    /*Boton de agregar al carrito en la vista rapida*/
+    .woocommerce div.product div.summary button.single_add_to_cart_button {
+		width: 185px;
+	}
+	.woocommerce div.product .summary .summary-content .added_to_cart {
+		float: right;
+		margin-right: 50px;
+	}
+}
+@media (min-width: 960px) {
+    /*Quitar el boton de cuenta en el header de mas de 960px*/
+    #outer-wrap .minimal-header #site-navigation-wrap .menu-item-7147 {
+		display: none;
+	}
+}
+@media screen and (min-width: 788px) and (max-width: 1027px) {
+	.e-atc-qty-button-holder a.buy-now {
+		margin-top: 55px;
+		margin-left: -120px;
+	}
+}
+
+
+/**
+ * 
+ * PAGINA TOTAL TOOLS
+ * 
+*/
+/*****PAGINA DE INICIO DE TOTAL TOOLS*****/
+
+
+/*****PAGINA DE TIENDA TOTAL TOOLS*****/
+
+
+/*****PAGINA DE TIENDA TOTAL TOOLS*****/

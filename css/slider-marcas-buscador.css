@@ -1,0 +1,107 @@
+.main-slider-marcas-buscador {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    margin-top: 250px;
+    border: 1px solid #eee;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1257px);
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 80px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: 2200px;
+}
+
+.slider .slide {
+    height: 60px;
+    width: 150px;
+    margin: 0px 10px;
+    border: 1px solid #eee;
+    border-radius: 6px 6px 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.slider .slide:hover {
+    box-shadow: 0 0 0px rgba(0,0,0,0);
+    transition: background .4s ease,
+        border-color .4s ease,
+        box-shadow .4s ease,
+        outline .4s ease;
+}
+
+/*.slider .dewalt {
+    margin-top: 15px;
+}
+
+.slider .bosch,
+.slider .siefken {
+    margin-top: 20px;
+}
+
+.slider .total {
+    margin-top: 10px;
+}
+
+.slider .sweiss {
+    margin-top: 25px;
+}
+
+.slider .elite {
+    margin-top: 25px;
+    margin-left: -10px;
+}*/
+
+@media (max-width: 500px) {
+
+    .slider::before,
+    .slider::after {
+        width: 50px;
+    }
+}

@@ -782,11 +782,56 @@ PAGINA DE CUENTA
  * PAGINA TOTAL TOOLS
  * 
  */
-/*****PAGINA DE INICIO DE TOTAL TOOLS*****/
+/************ESTILOS EN GENERAL************/
+/*Categorias header*/
+section.elementor-element-a361ed4 section.elementor-element-96b7770 nav.elementor-nav-menu--main li.menu-item-7804 ul.elementor-nav-menu--dropdown li.menu-item-object-product_cat {
+	border-bottom: 1px solid #d9d9d9;
+	background-color: #117076;
+	color: #fff;
+}
+section.elementor-element-a361ed4 section.elementor.element-96b7770 nav.elementor-nav-menu---main li.menu-item-7804 ul.elementor-nav-menu--dropdown li.menu-item-object-product_cat a.elementor-sub-item {
+	color: #FFFFFF;
+}
 
+section.elementor-element-a361ed4 section.elementor.element-96b7770 .elementor-nav-menu--layout-horizontal .elementor-nav-menu a {
+	color: #FFFFFF;
+}
+
+section.elementor-element-a361ed4 section.elementor-element-96b7770 nav.elementor-nav-menu--main li.menu-item-7804 ul.elementor-nav-menu--dropdown li.menu-item-object-product_cat:hover {
+	background-color: #d9d9d9;
+	color: #333333;
+}
+section.elementor-element-a361ed4 section.elementor-element-96b7770 nav.elementor-nav-menu--main li.menu-item-7804 ul.elementor-nav-menu--dropdown li.menu-item-object-product_cat ul.elementor-nav-menu--dropdown li.menu-item-type-taxonomy {
+	border-bottom: 1px solid #d9d9d9;
+}
+
+/*****PAGINA DE INICIO DE TOTAL TOOLS*****/
+/*Barra scroll de la pagina de inicio*/
+body.page-id-7779::-webkit-scrollbar {
+	width: 13px;
+}
+body.page-id-7779::-webkit-scrollbar-track {
+	background-color: #f2f2f2;
+}
+body.page-id-7779::-webkit-scrollbar-thumb {
+	background-color: #117076;
+}
 
 
 /*****PAGINA DE TIENDA TOTAL TOOLS*****/
+/*Barra scroll de la tienda*/
+body.term-herramientas-total-tools::-webkit-scrollbar {
+	width: 13px;
+}
+
+body.term-herramientas-total-tools::-webkit-scrollbar-track {
+	background-color: #f2f2f2;
+}
+
+body.term-herramientas-total-tools::-webkit-scrollbar-thumb {
+	background-color: #117076;
+}
+
 /*Caja porcentaje de descuento*/
 .elementor-8599 .elementor-element.elementor-element-d88a8a7.elementor-wc-products ul.products li.product span.onsale {
 	top: 0 !important;
@@ -801,7 +846,46 @@ PAGINA DE CUENTA
 	border-radius: 0%;
 	line-height: 20px;
 }
+/*Filtro buscado de la tienda total tools*/
+section.elementor-element-9945f4e .elementor-element-81d3dcd .jet-smart-filters-search .jet-search-filter__input {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #117076;
+	border-radius: 40px;
+	padding: 0px 10px;
+}
+/*Caja porcentaje de descuento*/
+#owp-qv-wrap .owp-qv-container .product_cat-herramientas-total-tools span.onsale {
+	background-color: #117076;
+}
+/*Boton de comprar ahora en la vista rapida*/
+#owp-qv-wrap .owp-qv-container .product_cat-herramientas-total-tools div.entry-summary .summary-content form.cart a.buy-now, #owp-qv-wrap .owp-qv-container .product_cat-herramientas-total-tools div.entry-summary .summary-content form.cart button.single_add_to_cart_button {
+	background-color: #117076;
+}
+#owp-qv-wrap .owp-qv-container .product_cat-herramientas-total-tools div.entry-summary .summary-content form.cart a.buy-now:hover, #owp-qv-wrap .owp-qv-container .product_cat-herramientas-total-tools div.entry-summary .summary-content form.cart button.single_add_to_cart_button:hover {
+	background-color: #E51A13;
+}
 
+/*Colores para ala barra de scroll en la caja de tipo de herrameintas en  tienda total tools*/
+section.elementor-element-6042934 div.elementor-element-415de3b .jet-checkboxes-list .jet-filter-items-scroll::-webkit-scrollbar {
+	width: 10px;
+}
+section.elementor-element-6042934 div.elementor-element-415de3b .jet-checkboxes-list .jet-filter-items-scroll::-webkit-scrollbar-track {
+	background-color: #117076;
+}
+section.elementor-element-6042934 div.elementor-element-415de3b .jet-checkboxes-list .jet-filter-items-scroll::-webkit-scrollbar-thumb {
+	background-color: #E51A13;
+}
+
+section.elementor-element-9ef2cc4 .elementor-element-3af4a25 #elementor-tab-title-1761 a.elementor-toggle-title, section.elementor-element-9ef2cc4 div.elementor-element-3af4a25 .elementor-element-9bf21ef h2.elementor-size-default, section.elementor-element-9ef2cc4 div.elementor-element-3af4a25 .elementor-element-d3ab6fc h2.elementor-size-default {
+	font-size: 1.8rem;
+}
+section.elementor-element-9ef2cc4 div.elementor-element-3af4a25 .elementor-element-9bf21ef h2.elementor-size-default {
+
+}
+section.elementor-element-9ef2cc4 div.elementor-element-3af4a25 .elementor-element-d3ab6fc h2.elementor-size-default {
+
+}
 /*****PAGINA DE SINGLE PRODUCT TOTAL TOOLS*****/
 section.elementor-element-47d375f div.elementor-element-129cef2 div.elementor-element-7aa1e69 form.cart a.buy-now {
 	padding: 12px 20px;
